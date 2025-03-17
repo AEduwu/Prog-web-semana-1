@@ -10,9 +10,8 @@
 <body>
     <header>
         <img src="img/logo.png" class="logo" alt="Logo de TodoJuegos">
-        <h1>TodoJuegos</h1>
         <nav class="button">
-            <a href="index.html">Inicio</a>
+            <a href="index.html">Categorias</a>
         </nav>
     </header>
     <div class="banner">
@@ -22,14 +21,38 @@
     </div>
     <section>
         <h2>Categorias</h2>
-        <ul class="categories
-        ">
-            <li><a href="category.html">Terror</a></li>
-            <li><a href="category.html">Accion aventura</a></li>
-            <li><a href="category.html">Estrategia</a></li>
-            <li><a href="category.html">Shooters</a></li>
-            <li><a href="category.html">Supervivencia</a></li>
+        <div class="bannercontainer">
+            <div class="bannerbutton" onclick="location.href='terror.html'">
+                <img class="categorieimage" src="img/terror.png" alt="">
+                <div class="bannertext">Terror</div>
+            </div>
+        </div>
+        <div class="bannercontainer">
+            <div class="bannerbutton" onclick="location.href='adventure.html'">
+                <img class="categorieimage" src="img/adventure.png" alt="">
+                <div class="bannertext">Accion/Aventura</div>
+            </div>
+        </div>
+        <div class="bannercontainer">
+            <div class="bannerbutton" onclick="location.href='strategy.html'">
+                <img class="categorieimage" src="img/strategy.png" alt="">
+                <div class="bannertext">Estrategia</div>
+            </div>
+        </div>
+        <div class="bannercontainer">
+            <div class="bannerbutton" onclick="location.href='shooter.html'">
+                <img class="categorieimage" src="img/shooter.png" alt="">
+                <div class="bannertext">Shooter</div>
+            </div>
+        </div>
+        <div class="bannercontainer">
+            <div class="bannerbutton" onclick="location.href='racing.html'">
+                <img class="categorieimage" src="img/racing.png" alt="">
+                <div class="bannertext">Racing</div>
+            </div>
+        </div>
     </section>
+    <div class="spacer"></div>
     <footer>
         <p>Desarrollado por Grupo 2, DUOC UC</p>
     </footer>
