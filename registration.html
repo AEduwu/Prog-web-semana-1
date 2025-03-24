@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoJuegos</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" class="logo" alt="Logo de TodoJuegos">
+        <div class="nav">
+            <nav class="button">
+                <a href="index.html">Principal</a>
+            </nav>
+            <nav class="button">
+                <a href="registration.html">Registro</a>
+            </nav>
+        </div>
+    </header>
+    <div class="banner">
+        <h1>Registro</h1>
+        <p class="mainText">Registrate y obten descuentos exclusivos y acceso anticipado a los mejores juegos.</p>
+    </div>
+    <div class="formContainer">
+    <form id="registroForm">
+        <label>Nombre Completo:</label>
+        <input type="text" id="nombre" required>
+        <span class="error" id="errorNombre"></span>
+        
+        <label>Nombre de Usuario:</label>
+        <input type="text" id="usuario" required>
+        <span class="error" id="errorUsuario"></span>
+        
+        <label>Correo Electrónico:</label>
+        <input type="email" id="email" required>
+        <span class="error" id="errorEmail"></span>
+        
+        <label>Contraseña:</label>
+        <input type="password" id="password" required>
+        <span class="error" id="errorPassword"></span>
+        
+        <label>Repetir Contraseña:</label>
+        <input type="password" id="confirmPassword" required>
+        <span class="error" id="errorConfirmPassword"></span>
+        
+        <label>Fecha de Nacimiento:</label>
+        <input type="date" id="fechaNacimiento" required>
+        <span class="error" id="errorFechaNacimiento"></span>
+        
+        <label>Dirección de Despacho (Opcional):</label>
+        <input type="text" id="direccion">
+        
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+    </form>
+    </div>
+    <div class="spacer"></div>
+    <footer>
+        <p>Desarrollado por Grupo 2, DUOC UC</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#registroForm").submit(function(event) {
+                event.preventDefault();
+                $(".error").text("");
+                let isValid = true;
+                
+                let nombre = $("#nombre").val().trim();
+                let usuario = $("#usuario").val().trim();
+                let email = $("#email").val().trim();
+                let password = $("#password").val();
+                let confirmPassword = $("#confirmPassword").val();
+                let fechaNacimiento = new Date($("#fechaNacimiento").val());
+                let hoy = new Date();
+                let edad = hoy.getFullYear() - fechaNacimiento.getFullYear();
+                let mes = hoy.getMonth() - fechaNacimiento.getMonth();
+                if (mes < 0 || (mes === 0 && hoy.getDate() < fechaNacimiento.getDate())) {
+                    edad--;
+                }
+                
+                let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                let passwordRegex = /^(?=.*[A-Z])(?=.*\d).{6,18}$/;
+                
+                if (!nombre) {
+                    $("#errorNombre").text("El nombre es obligatorio");
+                    isValid = false;
+                }
+                if (!usuario) {
+                    $("#errorUsuario").text("El usuario es obligatorio");
+                    isValid = false;
+                }
+                if (!emailRegex.test(email)) {
+                    $("#errorEmail").text("Correo electrónico no válido");
+                    isValid = false;
+                }
+                if (!passwordRegex.test(password)) {
+                    $("#errorPassword").text("La contraseña debe tener entre 6 y 18 caracteres, al menos un número y una mayúscula");
+                    isValid = false;
+                }
+                if (password !== confirmPassword) {
+                    $("#errorConfirmPassword").text("Las contraseñas no coinciden");
+                    isValid = false;
+                }
+                if (edad < 13) {
+                    $("#errorFechaNacimiento").text("Debes tener al menos 13 años");
+                    isValid = false;
+                }
+                
+                if (isValid) {
+                    alert("Formulario enviado con éxito");
+                    this.submit();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
