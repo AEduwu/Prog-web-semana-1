@@ -4,60 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TodoJuegos</title>
-    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="icon" href="img/icon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    
     <header>
-        <img src="img/logo.png" class="logo" alt="Logo de TodoJuegos">
+        <img src="img/logo.jpg" class="logo" alt="Logo de TodoJuegos">
         <div class="nav">
-            <nav class="button">
+            <nav class="button-selected">
                 <a href="index.html">Principal</a>
             </nav>
             <nav class="button">
-                <a href="registration.html">Registro</a>
+                <a href="registration.html">Categorias</a>
+            </nav>
+            <nav class="button">
+                <a href="registration.html">Blog</a>
+            </nav>
+            <nav class="button">
+                <a href="registration.html">Log-In</a>
             </nav>
         </div>
     </header>
+
     <div class="banner">
         <h1>¡Bienvenido a TodoJuegos!</h1>
         <p class="mainText">En TodoJuegos encontrarás los mejores juegos para todas las consolas y plataformas.</p>
         <p class="mainText">¡No esperes más y encuentra el juego que estás buscando!</p>
     </div>
+
     <section>
         <h2>Categorias</h2>
         <div class="bannercontainer">
             <div class="bannerbutton" onclick="location.href='terror.html'">
-                <img class="categorieimage" src="img/terror.png" alt="">
+                <img class="categorieimage" src="img/terror.png" alt="Imagen categoria terror">
                 <div class="bannertext">Terror</div>
             </div>
         </div>
+
         <div class="bannercontainer">
             <div class="bannerbutton" onclick="location.href='adventure.html'">
-                <img class="categorieimage" src="img/adventure.png" alt="">
+                <img class="categorieimage" src="img/adventure.png" alt="Imagen categoria aventura">
                 <div class="bannertext">Accion/Aventura</div>
             </div>
         </div>
+
         <div class="bannercontainer">
             <div class="bannerbutton" onclick="location.href='strategy.html'">
-                <img class="categorieimage" src="img/strategy.png" alt="">
+                <img class="categorieimage" src="img/strategy.png" alt="Imagen categoria estrategia">
                 <div class="bannertext">Estrategia</div>
             </div>
         </div>
+
         <div class="bannercontainer">
             <div class="bannerbutton" onclick="location.href='shooter.html'">
-                <img class="categorieimage" src="img/shooter.png" alt="">
+                <img class="categorieimage" src="img/shooter.png" alt="Imagen categoria shooter">
                 <div class="bannertext">Shooter</div>
             </div>
         </div>
+        
         <div class="bannercontainer">
             <div class="bannerbutton" onclick="location.href='racing.html'">
-                <img class="categorieimage" src="img/racing.png" alt="">
+                <img class="categorieimage" src="img/racing.png" alt="Imagen categoria carreras">
                 <div class="bannertext">Racing</div>
             </div>
         </div>
     </section>
+
+    <h2>Ofertas destacadas</h2>
+
     <div class="spacer"></div>
+
+<div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gy-4">
+        <div class="col">
+            <div class="card">
+                <img class="card-img-top w-100" style="height: 200px; object-fit: cover;" src="img/forzahorizon5caratula.jpg" alt="Forza Horizon 5">
+                <div class="card-body p-4">
+                    <p class="text-primary card-text mb-0">$20.000</p>
+                    <h4 class="card-title">Forza Horizon 5</h4>
+                    <p class="card-text">Forza Horizon 5 es un juego de carreras en mundo abierto...</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img class="card-img-top w-100" style="height: 200px; object-fit: cover;" src="img/nierauomatacaratula.avif" alt="NieR: Automata">
+                <div class="card-body p-4">
+                    <p class="text-primary card-text mb-0">$15.000</p>
+                    <h4 class="card-title">NieR: Automata</h4>
+                    <p class="card-text">NieR: Automata es un RPG de acción desarrollado por PlatinumGames...</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img class="card-img-top w-100" style="height: 200px; object-fit: cover;" src="img/aoe4caratula.webp" alt="Age of Empires IV">
+                <div class="card-body p-4">
+                    <p class="text-primary card-text mb-0">$10.000</p>
+                    <h4 class="card-title">Age of Empires IV</h4>
+                    <p class="card-text">Age of Empires IV es un juego de estrategia en tiempo real...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="spacer"></div>
+
     <footer>
         <p>Desarrollado por Grupo 2, DUOC UC</p>
     </footer>
