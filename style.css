@@ -12,21 +12,7 @@ body {
     flex-direction: column;
 }
 
-header {
-    height: 70px;
-    background-color: #494949;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-}
 
-.logo {
-    width: 200px;
-}
 
 .banner {
     background-image: url("img/banner.jpg");
@@ -43,57 +29,9 @@ header {
     padding: 30;
 }
 
-a:hover{
-    display: none;
-
+.navbar {
+    background-color: rgb(51, 51, 51);
 }
-a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    list-style: none;
-    font-size: 20px;
-    padding: 0;
-    margin: 0;
-}
-
-.button-selected {
-    color: rgb(117, 117, 117);
-    font-weight: bold;
-    height: 70px;
-    width: 100px;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-}
-.button {
-    color: white;
-    height: 70px;
-    width: 100px;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.button:hover {
-    background-color: #e0e0e0;
-    color: white;
-    height: 70px;
-    width: 100px;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 
 h1 {
     color: white;
@@ -348,11 +286,6 @@ footer {
       display: none;
     }
   }
-
-.nav {
-    display: flex;
-    gap: 20px;
-}
 
 form {
     display: flex;

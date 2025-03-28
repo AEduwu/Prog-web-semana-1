@@ -11,21 +11,34 @@
 <body>
     
     <header>
-        <img src="img/logo.jpg" class="logo" alt="Logo de TodoJuegos">
-        <div class="nav">
-            <nav class="button-selected">
-                <a href="index.html">Principal</a>
-            </nav>
-            <nav class="button">
-                <a href="registration.html">Categorias</a>
-            </nav>
-            <nav class="button">
-                <a href="registration.html">Blog</a>
-            </nav>
-            <nav class="button">
-                <a href="registration.html">Log-In</a>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="img/logo.jpg" alt="Logo de TodoJuegos" width="120" class="me-2">
+                </a>
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="registration.html">Categorías</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="registration.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="registration.html">Log-In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     
     <div class="sidebar">
@@ -64,5 +77,8 @@
     <footer>
         <p>Desarrollado por Grupo 2, DUOC UC</p>
     </footer>
+
+    <script src="js/header.js"></script>
+
 </body>
 </html>
