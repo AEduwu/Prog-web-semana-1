@@ -3,7 +3,10 @@ body {
     color: white;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-image: url('img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -405,7 +408,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
 }
 
 .container {
