@@ -190,8 +190,8 @@ footer {
 
 .sidebar {
     width: 250px;
-    height: calc(100vh - 250px);
-    top: 181px;
+    height: calc(100vh - 200px);
+    top: 176px;
     background-color: #353535;
     color: white;
     padding: 20px;
@@ -341,7 +341,14 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
+}
+
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
 }
 
 .container {
@@ -358,4 +365,46 @@ button:hover {
 
 .card-text {
     color: #0f0f0f;
+}
+
+.cart-count {
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    white-space: pre;
+}
+
+.btn-register {
+    width: 250px;
+    text-align: center;
+    display: inline-block;
+    background: linear-gradient(45deg, #2f20ff, #ff4b2b); 
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-register:hover {
+    background: linear-gradient(45deg, #e926ff, #c30df0);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
 }
