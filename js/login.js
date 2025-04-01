@@ -23,6 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (!isValid) {
             event.preventDefault();
+        } else {
+            window.location.href = "profile.html";
+            event.preventDefault();
         }
     });
 });
