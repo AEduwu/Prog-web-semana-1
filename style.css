@@ -526,3 +526,25 @@ a:hover {
     align-items: center;
     justify-content: center;
 }
+
+.btn-change {
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    background: linear-gradient(45deg, #2f20ff, #ff4b2b); 
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-change:hover {
+    background: linear-gradient(45deg, #e926ff, #c30df0);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
